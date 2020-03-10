@@ -857,7 +857,8 @@ INSERT  INTO `vendedores`(`codigo_vendedor`,`nome_vendedor`,`sobrenome_vendedor`
 ('03','Michele',NULL,12,'05'),
 ('04','Viviane',NULL,9,'03'),
 ('05','Rafaela',NULL,8,'04'),
-('06','Manoela','Timossi',1,'05');
+('06','Institucional',NULL,1,'05'),
+('07', 'Manoela', 'Timossi', 1, '05');
 SELECT nome_vendedor, sobrenome_vendedor FROM vendedores; 
 SELECT * FROM pedidos 
 WHERE numero_pedido=326;
