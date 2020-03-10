@@ -771,7 +771,7 @@ INSERT  INTO `pedidos`(`numero_pedido`,`codigo_cliente`,`data_pedido`,`data_entr
 (323,66,'2009-04-30 00:00:00','2009-05-17 00:00:00','01'),
 (324,78,'2008-01-23 00:00:00','2010-02-15 00:00:00','01'),
 (325,75,'2009-08-12 00:00:00','2009-08-30 00:00:00','01'),
-(326,79,'2009-10-12 00:00:00','2009-10-28 00:00:00','01');
+(326,79,'2009-10-12 00:00:00','2009-10-28 00:00:00','06');
 
 /*Table structure for table `produtos` */
 
@@ -859,6 +859,8 @@ INSERT  INTO `vendedores`(`codigo_vendedor`,`nome_vendedor`,`sobrenome_vendedor`
 ('05','Rafaela',NULL,8,'04'),
 ('06','Manoela','Timossi',1,'05');
 SELECT nome_vendedor, sobrenome_vendedor FROM vendedores; 
+SELECT * FROM pedidos 
+WHERE numero_pedido=326;
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
